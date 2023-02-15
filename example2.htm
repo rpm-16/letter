@@ -9,17 +9,7 @@
         -webkit-text-size-adjust: none;
         -ms-text-size-adjust: none;
       }
-
-      @media only screen and (max-device-width: 730px),
-        only screen and (max-width: 730px) {
-        .table tr td {
-          padding: 0px 20px 80px 20px !important;
-        }
-      
-      /* For Mobile Yahoo */
-
-      /* For Mobile Yahoo */
-    }
+      }
     </style>
   </head>
 
@@ -35,7 +25,7 @@
     <div
       id="mailsub"
       class="notification"
-      align="center"
+      align = "center"
       style="
         word-break: normal;
         -webkit-text-size-adjust: none;
@@ -44,26 +34,30 @@
       "
     >
       <table
-        width="100%"
-        border="0"
-        cellspacing="0"
-        cellpadding="0"
-        style="max-width: 600px; min-width: 300px"
+        border="0" cellspacing="0" cellpadding="0"
+        style="max-width: 600px; min-width: 300px; width: 100%;"
       >
         <tr>
           <td style="padding: 0px 40px 80px 40px">
+
             <div
               style="
                 background: #d71a22;
                 padding: 26px;
                 border-radius: 20px;
-                max-width: 520px;
+                width: 100%;
                 height: 259px;
                 margin-top: 72px;
                 box-sizing: border-box;
+                display: flex;
+                position: relative;
               "
             >
-              <img src="example2/logo.svg" />
+            <div class="">
+              <img src="example2/logo.svg"
+              style="position:relative;
+              "
+               />
               <span
                 style="
                   display: block;
@@ -72,20 +66,31 @@
                   font-style: normal;
                   font-weight: 700;
                   font-size: 28px;
+                  word-wrap: none;
                   line-height: 150%;
                   color: #ffffff;
+                  z-index: 2;
                 "
                 >Вы на связи?
               </span>
+            </div>
 
-              <img
+              <img class="imgAdaptive"
                 style="
+                  width: 58%;
                   position: absolute;
-                  margin-top: -204px;
-                  margin-right: -19px;
-                "
+                  right: 12px;
+                  bottom: 0px;
+                  max-width: 298px; 
+                  margin-top: -10px;"
                 src="./example2/man.png"
               />
+              <div class=""
+                style = "background-image: url(./example2/man.png);
+                background-repeat: no-repeat; 
+              ">
+                
+              </div>
             </div>
 
             <p style="margin-top: 50px">
@@ -111,17 +116,19 @@
             <p style="line-height: 140%; margin-top: 25px">
               Поможем повысить ваш профессионализм и расскажем:
             </p>
-
-            <ul>
-              <li>Как продавать больше, создав свой бренд;</li>
-              <li>
+            
+            
+            <ul style="list-style-image: url(./example2/listMarker1.svg);
+             line-height: 22px; margin-left:10px; padding-left:0px; ">
+              <li style="padding-left:10px;">Как продавать больше, создав свой бренд;</li>
+              <li style="padding-left:10px;">
                 Как увеличить продажи через визуальную коммуникацию с клиентом;
               </li>
-              <li>
+              <li style="padding-left:10px;">
                 Какие фишки помогут привлечь покупателей, а какие
                 уже не работают;
               </li>
-              <li>
+              <li style="padding-left:10px;">
                 Как выйти на более широкий рынок с помощью узнаваемого бренда.
               </li>
             </ul>
