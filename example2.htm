@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>-</title>
+  </head>
+
+  <body
+    style="
+      background: #f5f5f5;
+      padding: 0px;
+      margin: 0px;
+      font-family: 'Arial';
+      font-size: 14px;
+    "
+  >
+    <div
+      id="mailsub"
+      class="notification"
+      align="center"
+      style="
+        word-break: normal;
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        line-height: normal;
+      "
+    >
+      <table width="100%" border="1" cellspacing="0" cellpadding="0" 
+      style="max-width: 600px; min-width: 300px">
+        <tr>
+          <td style="padding: 0px 40px 80px 40px;">
+            <div
+              style="
+                background: #d71a22;
+                padding: 26px;
+                border-radius: 20px;
+                max-width: 520px;
+                height: 259px;
+                margin-top: 72px;
+                box-sizing: border-box;
+              "
+            >
+              <img src="example2/logo.svg" />
+              <span
+                style="                
+                  display: block;
+                  margin-top: 17px;
+                  font-family: 'Arial';
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 28px;
+                  line-height: 150%;
+                  color: #ffffff;
+                "
+                >Вы на связи?
+              </span>
+
+              <img
+              style="position: absolute; 
+              margin-top: -204px;
+              margin-right: -19px;
+              "
+              src="./example2/man.png"
+            />
+            
+            </div>
+     
+            <p style="margin-top: 50px;">
+              <b>@{ if IsEmpty(Recipient.OnlyStandardFirstName)
+                              }Здравствуйте!@{ else }Здравствуйте, ${
+                              Recipient.OnlyStandardFirstName }!@{ end if
+                              }
+              </b>
+            </p>
+            <p style="line-height: 19.6px; margin-top: 25px;">
+              Это Андрей Горнов, основатель агентства <b>Getbrand</b>. У меня
+              новости по поводу наших писем.
+            </p>
+
+            <p  style="line-height: 140%; margin-top: 25px;">
+              Мы изменили свой подход — теперь больший упор будем делать
+              на инструменты, методы и технологии для создания и поддержки
+              собственного бренда. Как и прежде, рассылка будет полезна
+              для собственников бизнеса, коммерческих и креативных директоров,
+              маркетологов, бренд-менеджеров и дизайнеров.
+            </p>
+
+            <p  style="line-height: 140%;margin-top: 25px;">Поможем повысить ваш профессионализм и расскажем:</p>
+
+            <ul>
+              <li>Как продавать больше, создав свой бренд;</li>
+              <li>
+                Как увеличить продажи через визуальную коммуникацию с клиентом;
+              </li>
+              <li>
+                Какие фишки помогут привлечь покупателей, а какие
+                уже не работают;
+              </li>
+              <li>
+                Как выйти на более широкий рынок с помощью узнаваемого бренда.
+              </li>
+            </ul>
+
+            <p style="line-height: 140%;margin-top: 25px;">
+              Однако, понимаю, что рассылка и сама тематика могла стать
+              вам неактуальной. Если это так — от рассылки можно отписаться
+              в один клик: <a style="color:#000;" href="${ Message.UnsubscribeLink }">отписаться от рассылки Getbrand.</a>
+            </p>
+
+            <p style="line-height: 140%;margin-top: 25px;">
+              ИМЯ, мне важно, чтобы вы получали только актуальную и полезную
+              информацию. Поэтому в ответном письме можете поделиться вашими
+              текущими задачами, наболевшими вопросами и интересующими темами.
+              Я буду включать их в новые письма.
+            </p>
+
+            <div style="margin-top: 32px; display: flex; align-items: center;">
+              <div class="">
+                  <img src="./example2/mini-ava.png">
+              </div>
+              <div style="margin-left: 20px;">
+                <p style="line-height: 130%;">
+                  <span style = "font-weight:600;">
+                    С уважением,<br>
+                    Андрей Горнов<br>
+                  </span>
+                  основатель Getbrand
+                </p>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"
+          style="padding: 29px 40px 29px 40px; 
+          background: #D71A22;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="font-family: 'Arial';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 130%;           
+              color: #FFFFFF;"
+            >
+              Следите за нами где удобно <img src="./example2/arrow-right.svg">
+            </div>
+            <div>
+             <ul style="list-style: none; display: flex; margin:0px; padding:0px;">
+              <li style="margin-left: 12px;"><img src="./example2/social-1.svg"></li>
+              <li style="margin-left: 12px;"><img src="./example2/social-2.svg"></li>
+              <li style="margin-left: 12px;"><img src="./example2/social-3.svg"></li>
+              <li style="margin-left: 12px;"><img src="./example2/social-4.svg"></li>
+             </ul>
+            </div>
+          </div>
+
+          <div style="font-family: 'Arial';
+          margin-top: 20px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 9px;
+          line-height: 135%;          
+          color: rgba(255, 255, 255, 0.7);">
+            Отписаться от рассылки можно
+            <a
+              style="
+                font-family: 'Arial';
+                font-size: 9px;
+                color: rgba(255, 255, 255, 0.7);
+              "
+              target="_blank"
+              href="${ Message.UnsubscribeLink }"
+            >
+              здесь
+            </a>
+          </div>
+            
+            
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
