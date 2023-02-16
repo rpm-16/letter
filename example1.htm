@@ -9,12 +9,34 @@
         -webkit-text-size-adjust: none;
         -ms-text-size-adjust: none;
       }
+      .adapt1 {
+        height: 302px;
+        margin-top: 72px;
+      }
+      .adaptive {
+        font-size: 35px;
+        padding: 30px;
+        line-height: 150%;
+        height: 108px;
+      }
+      @media screen and (max-width: 550px) {
+        .adaptive {font-size: 20px;
+        padding: 33px;
+        line-height: 100%;
+        height: 74px;
+        }  
+        .adapt1 {
+          height: 262px;
+          margin-top: 32px;
+        }      
+    }
+
     </style>
   </head>
 
   <body
     style="
-      background: #f5f5f5;
+      background: #d71a22;
       padding: 0px;
       margin: 0px;
       font-family: 'Arial';
@@ -37,37 +59,45 @@
           style="margin: auto; max-width: 600px; min-width: 300px; width: 100%"
         >
           <tr>
-            <td style="padding: 0px 40px 80px 40px">
-              <div
+            <td style="padding: 0px 20px 60px 20px">
+              <div class="adapt1"
                 style="
-                  background: #d71a22;
-                  padding: 26px;
-                  border-radius: 20px;
+                  padding: 0px 26px;
                   width: 100%;
-                  height: 259px;
-                  margin-top: 72px;
+
                   box-sizing: border-box;
                   display: flex;
                   position: relative;
                 "
               >
                 <div class="">
-                  <img src="example2/logo.svg" style="position: relative" />
-                  <span
-                    style="
-                      display: block;
-                      margin-top: 17px;
+                  <img src="./example1/logo.svg" style="position: relative" />
+
+                  <div class="adaptive" style="display: flex;                   
+                  align-items: center; justify-content: center;
+                  max-width: 292px;
+                  width: 100%;
+                  background-image: url(./example1/ramka.svg);
+                  background-size: cover;
+                  margin-top: 38px;
+                  box-sizing: border-box;
+                  ">
+
+                    <span 
+                    style="                                         
                       font-family: 'Arial';
                       font-style: normal;
                       font-weight: 700;
-                      font-size: 28px;
-                      word-wrap: none;
-                      line-height: 150%;
+                      word-wrap: none;                      
                       color: #ffffff;
                       z-index: 2;
+                      white-space: nowrap;          
                     "
                     >Вы на связи?
                   </span>
+                  </div>
+
+
                 </div>
 
                 <img
@@ -82,9 +112,23 @@
                   "
                   src="./example2/man.png"
                 />
+                <div
+                  class=""
+                  style="
+                    background-image: url(./example2/man.png);
+                    background-repeat: no-repeat;
+                  "
+                ></div>
               </div>
 
-              <p style="margin-top: 50px">
+              <div style="
+                background: #FFFFFF;
+                border-radius: 20px;
+                padding: 58px 20px 70px 20px;
+
+              ">
+
+              <p>
                 <b
                   >@{ if IsEmpty(Recipient.OnlyStandardFirstName) }Здравствуйте!@{
                   else }Здравствуйте, ${ Recipient.OnlyStandardFirstName }!@{ end
@@ -160,14 +204,17 @@
                   </p>
                 </div>
               </div>
+
+              </div>
+
+              
             </td>
           </tr>
           <tr>
             <td
               style="
                 text-align: center;
-                padding: 29px 40px 29px 40px;
-                background: #d71a22;
+                padding: 0px 40px 29px 40px;                
               "
             >
               <div
@@ -200,16 +247,16 @@
                     "
                   >
                     <li style="margin-left: 12px">
-                      <img src="./example2/social-1.svg" />
+                      <img src="./example1/social-1.svg" />
                     </li>
                     <li style="margin-left: 12px">
-                      <img src="./example2/social-2.svg" />
+                      <img src="./example1/social-2.svg" />
                     </li>
                     <li style="margin-left: 12px">
-                      <img src="./example2/social-3.svg" />
+                      <img src="./example1/social-3.svg" />
                     </li>
                     <li style="margin-left: 12px">
-                      <img src="./example2/social-4.svg" />
+                      <img src="./example1/social-4.svg" />
                     </li>
                   </ul>
                 </div>
